@@ -3,14 +3,15 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular TODO app</title>
+    <title>Angular tasks app</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 </head>  
-<body ng-controller="mainController">  
+<body ng-controller="mainController"> 
+    
     <div class="container"> 
     <!--Cabecera-->
         <div class="jumbotron text-center">
-            <h1>Angular TODO List <span class="label label-info">{{ todos.length }}</span></h1>
+            <h1>Tasks List <span class="label label-info">{{ todos.length }}</span></h1>
         </div>
         <!--Lista de Todos-->
         <div id="todo-list" class="row">
@@ -22,7 +23,8 @@
                  </div>
              </div>
          </div>
-         <!--Formulario para insertar nuevos Todo-->             <div id="todo-form" class="row">
+         <!--Formulario para insertar nuevos Todo-->             
+        <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
                 <form>
                     <div class="form-group">
@@ -33,6 +35,10 @@
             </div>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> <script src="main.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> 
+    <script src="main.js"></script>
+    
 </body>  
 </html>  
